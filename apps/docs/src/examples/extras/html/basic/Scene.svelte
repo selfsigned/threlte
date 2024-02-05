@@ -46,6 +46,13 @@
 <T.GridHelper />
 
 <T.Mesh
+  position={[-2, 1, 1]}
+  {material}
+>
+  <T.BoxGeometry args={[1, 2]}/>
+</T.Mesh>
+
+<T.Mesh
   position.y={0.5}
   {material}
 >
@@ -78,6 +85,7 @@
     position.x={0.75}
     transform
     pointerEvents="none"
+    occlude="blending"
   >
     <p
       class="w-auto translate-x-1/2 text-xs drop-shadow-lg"

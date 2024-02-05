@@ -10,7 +10,7 @@ export type HTMLProps = Props<Group> & {
     size: { width: number; height: number }
   ) => [number, number]
   eps?: number
-  occlude?: boolean | Object3D[]
+  occlude?: boolean | Object3D[] | 'blending'
   zIndexRange?: [number, number]
   sprite?: boolean
   pointerEvents?:
